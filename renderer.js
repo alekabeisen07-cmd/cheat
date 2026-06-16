@@ -2,8 +2,8 @@ const { ipcRenderer } = require('electron');
 
 // ТВОИ КЛЮЧИ GEMINI
 const API_KEYS = [
-    "AIzaSyDms6gSYdym2TqvK5PPir2lm-ns55s6FSs",
-    "AIzaSyCcQAc6RblDc7qFvkcLFRua7Hy_YS1tv34"
+    "key",
+    "key"
 ];
 
 let currentKeyIndex = 0;
