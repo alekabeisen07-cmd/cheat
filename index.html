@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 10px;
+            background: transparent;
+            color: rgba(150, 150, 150, 0.4);
+            font-family: sans-serif;
+            -webkit-app-region: drag;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #status {
+            font-size: 8px;
+            opacity: 0.6;
+            margin-bottom: 2px;
+            text-transform: uppercase;
+        }
+
+        #output {
+            font-size: 8px;
+            line-height: 1.6;
+            word-spacing: 4px;
+            font-weight: bold;
+            opacity: 0.6;
+            color: rgba(83, 83, 83, 0.7);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="status">IDLE</div>
+    <div id="output">...</div>
+    <script src="renderer.js"></script>
+</body>
+
+</html>
